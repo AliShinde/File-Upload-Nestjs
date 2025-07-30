@@ -8,6 +8,7 @@ A **NestJS backend module** that enables file uploads using [Multer](https://www
 - Uses Multer middleware for efficient file handling.
 - Validates file mimetype and enforces a maximum file size.
 - User-provided Cloudinary credentials for flexible integration.
+- Uses prisma to store file upload details in Postgres
 - Written in TypeScript for strong type safety.
 
 ## Installation
@@ -17,8 +18,11 @@ npm install
 ## Configuration
 
 You will need to provide your Cloudinary credentials via environment variables or a `.env` file:
+
 CLOUDINARY_CLOUD_NAME=your_cloud_name
+
 CLOUDINARY_API_KEY=your_api_key
+
 CLOUDINARY_API_SECRET=your_api_secret
 
 
